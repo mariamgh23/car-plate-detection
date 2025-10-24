@@ -63,6 +63,7 @@ car-plate-detection/
 ```bash
 git clone https://github.com/mariamgh23/car-plate-detection.git
 cd "car-plate-detection"
+---
 2️⃣ Install dependencies
 
 You can create a virtual environment (recommended):
@@ -78,7 +79,7 @@ python interpolate.py
 Step 2. Visualize Results
 python visualize.py
 This reads sample.mp4 and creates out.mp4 with bounding boxes and license numbers.
-###
+--
 
 🧰 Key Functions
 🟦 interpolate_bounding_boxes() (in interpolate.py)
