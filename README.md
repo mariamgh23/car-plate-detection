@@ -56,56 +56,79 @@ car-plate-detection/
 
 ---
 
+Got it ✅ — here’s your entire section rewritten as **one clean, properly structured Markdown block**, perfect to paste directly into your `README.md` (it’ll render beautifully on GitHub):
+
+---
+
+````markdown
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mariamgh23/car-plate-detection.git
 cd car-plate-detection
+````
 
-2️⃣ Install Dependencies
+---
+
+### 2️⃣ Install Dependencies
 
 You can create a virtual environment (recommended):
 
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 
 Then install required packages:
 
+```bash
 pip install -r requirements.txt
+```
 
+💡 *If you don’t have a `requirements.txt` yet, install these core libraries manually:*
 
-💡 If you don’t have a requirements.txt yet, install these core libraries manually:
-
+```bash
 pip install numpy pandas scipy opencv-python ultralytics torch
+```
 
-▶️ How to Run
-Step 1. Interpolate Missing Frames
+---
+
+## ▶️ How to Run
+
+### Step 1. Interpolate Missing Frames
+
+```bash
 python interpolate.py
+```
 
-Step 2. Visualize Results
+### Step 2. Visualize Results
+
+```bash
 python visualize.py
+```
 
+✅ This reads `sample.mp4` and creates `out.mp4` with bounding boxes and license numbers.
 
-✅ This reads sample.mp4 and creates out.mp4 with bounding boxes and license numbers.
+---
 
-🧰 Key Functions
-🟦 interpolate_bounding_boxes() — (in interpolate.py)
+## 🧰 Key Functions
 
-Takes raw detection data.
+### 🟦 `interpolate_bounding_boxes()` — *(in `interpolate.py`)*
 
-Uses scipy.interpolate.interp1d() to fill missing bounding boxes linearly.
+* Takes raw detection data.
+* Uses `scipy.interpolate.interp1d()` to fill missing bounding boxes linearly.
+* Ensures every car has continuous frame data from first to last appearance.
 
-Ensures every car has continuous frame data from first to last appearance.
+### 🟩 `draw_border()` — *(in `visualize.py`)*
 
-🟩 draw_border() — (in visualize.py)
+* Draws stylized corner borders around each detected vehicle.
+* Enhances visual clarity with adjustable line length and color.
 
-Draws stylized corner borders around each detected vehicle.
+---
 
-Enhances visual clarity with adjustable line length and color.
+## 🧾 Requirements Summary
 
-🧾 Requirements Summary
 | Library                | Purpose                                      |
 | ---------------------- | -------------------------------------------- |
 | `opencv-python`        | Video I/O and drawing                        |
@@ -113,3 +136,9 @@ Enhances visual clarity with adjustable line length and color.
 | `pandas`               | CSV data handling                            |
 | `scipy`                | Bounding box interpolation                   |
 | `torch`, `ultralytics` | YOLO model support (if using live detection) |
+
+```
+
+---
+
+
