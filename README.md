@@ -17,15 +17,19 @@ Got it ✅ — here’s your **Project Structure section** written as **one clea
 car-plate-detection/
 │
 ├── interpolate.py          # Interpolates missing bounding boxes for smooth tracking
+|
 ├── visualize.py            # Draws detection boxes and license plate numbers on video frames
+|
 ├── test.csv                # Raw detection results (input)
+|
 ├── test_interpolated.csv   # Output after interpolation (generated)
+|
 ├── sample.mp4              # Input video for detection visualization
+|
 ├── out.mp4                 # Final rendered output video
-└── README.md               # Project documentation
 
-```
-```
+
+└── README.md               # Project documentation
 
 ## 🎯 Features
 
