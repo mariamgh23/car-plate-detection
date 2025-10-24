@@ -10,12 +10,10 @@ Got it ✅ — here’s your **Project Structure section** written as **one clea
 ---
 
 ## 📁 Project Structure
-Got it ✅ — here’s your **Project Structure** section, written cleanly and fully inside **one single Markdown block** that renders beautifully on GitHub:
 
 ---
 
-```markdown
-## 📁 Project Structure
+
 
 ```
 
