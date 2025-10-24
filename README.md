@@ -137,8 +137,6 @@ python visualize.py
 | `scipy`                | Bounding box interpolation                   |
 | `torch`, `ultralytics` | YOLO model support (if using live detection) |
 
-```
 
----
 
 
