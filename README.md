@@ -8,14 +8,23 @@ This repository includes preprocessing, interpolation, and visualization scripts
 ## 📁 Project Structure
 
 car-plate-detection/
+
 │
+
 ├── interpolate.py # Interpolates missing bounding boxes for smooth tracking
+
 ├── visualize.py # Draws detection boxes and plate numbers on video frames
+
 ├── test.csv # Raw detection results (input)
+
 ├── test_interpolated.csv # Output after interpolation (generated)
+
 ├── sample.mp4 # Input video for detection visualization
+
 ├── out.mp4 # Final rendered output video
+
 └── README.md # Documentation file
+
 
 ---
 
@@ -90,10 +99,8 @@ Ensures every car has continuous frame data from first to last appearance.
 Draws stylized corner borders around each detected vehicle.
 
 Enhances visual clarity with adjustable line length and color.
-🖼️ Output Example
-## 🖼️ Output Example
 
-![Car Plate Detection Example](examples/out.gif)
+
 
 🧾 Requirements Summary
 | Library                | Purpose                                      |
