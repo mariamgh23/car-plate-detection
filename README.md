@@ -12,17 +12,11 @@ car-plate-detection/
 │
 
 ├── interpolate.py # Interpolates missing bounding boxes for smooth tracking
-
 ├── visualize.py # Draws detection boxes and plate numbers on video frames
-
 ├── test.csv # Raw detection results (input)
-
 ├── test_interpolated.csv # Output after interpolation (generated)
-
 ├── sample.mp4 # Input video for detection visualization
-
 ├── out.mp4 # Final rendered output video
-
 └── README.md # Documentation file
 
 
@@ -84,6 +78,7 @@ python interpolate.py
 Step 2. Visualize Results
 python visualize.py
 This reads sample.mp4 and creates out.mp4 with bounding boxes and license numbers.
+###
 
 🧰 Key Functions
 🟦 interpolate_bounding_boxes() (in interpolate.py)
@@ -103,6 +98,7 @@ Enhances visual clarity with adjustable line length and color.
 
 
 🧾 Requirements Summary
+
 | Library                | Purpose                                      |
 | ---------------------- | -------------------------------------------- |
 | `opencv-python`        | Video I/O and drawing                        |
