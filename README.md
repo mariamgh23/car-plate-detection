@@ -15,8 +15,6 @@ Got it ✅ — here’s your **Project Structure section** written as **one clea
 
 
 
-```
-
 car-plate-detection/
 │
 ├── interpolate.py          # Interpolates missing bounding boxes for smooth tracking
