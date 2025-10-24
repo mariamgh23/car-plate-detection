@@ -56,33 +56,42 @@ car-plate-detection/
 
 ---
 
-## ⚙️ Installation
+## 🚀 Installation & Setup
 
-### 1️⃣ Clone the repository
-
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mariamgh23/car-plate-detection.git
-cd "car-plate-detection"
----
-2️⃣ Install dependencies
+cd car-plate-detection
+
+2️⃣ Install Dependencies
 
 You can create a virtual environment (recommended):
+
 python -m venv venv
 venv\Scripts\activate
+
+
 Then install required packages:
+
 pip install -r requirements.txt
-💡 If you don’t have a requirements.txt yet, these are the core libraries:
+
+
+💡 If you don’t have a requirements.txt yet, install these core libraries manually:
+
 pip install numpy pandas scipy opencv-python ultralytics torch
+
 ▶️ How to Run
 Step 1. Interpolate Missing Frames
 python interpolate.py
+
 Step 2. Visualize Results
 python visualize.py
-This reads sample.mp4 and creates out.mp4 with bounding boxes and license numbers.
---
+
+
+✅ This reads sample.mp4 and creates out.mp4 with bounding boxes and license numbers.
 
 🧰 Key Functions
-🟦 interpolate_bounding_boxes() (in interpolate.py)
+🟦 interpolate_bounding_boxes() — (in interpolate.py)
 
 Takes raw detection data.
 
@@ -90,16 +99,13 @@ Uses scipy.interpolate.interp1d() to fill missing bounding boxes linearly.
 
 Ensures every car has continuous frame data from first to last appearance.
 
-🟩 draw_border() (in visualize.py)
+🟩 draw_border() — (in visualize.py)
 
 Draws stylized corner borders around each detected vehicle.
 
 Enhances visual clarity with adjustable line length and color.
 
-
-
 🧾 Requirements Summary
-
 | Library                | Purpose                                      |
 | ---------------------- | -------------------------------------------- |
 | `opencv-python`        | Video I/O and drawing                        |
@@ -107,4 +113,3 @@ Enhances visual clarity with adjustable line length and color.
 | `pandas`               | CSV data handling                            |
 | `scipy`                | Bounding box interpolation                   |
 | `torch`, `ultralytics` | YOLO model support (if using live detection) |
-
